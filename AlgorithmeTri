@@ -1,0 +1,6 @@
+from abc import ABC, abstractmethod
+class AlgorithmeTri(ABC):
+
+	@abstractmethod
+	def trier(self, publications: list):
+        pass

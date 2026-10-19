@@ -1,0 +1,15 @@
+a) Dans le patron Observateur, quel nom donne-t-on au rôle joué par Publication ? Et par Abonne ?
+
+b) Pourquoi _abonnes est-il de type list[Abonne] plutôt que list[NotifCourriel] ?
+
+c) Que se passe-t-il dans _notifier() ? Décrivez en une phrase (sans regarder le code).
+
+d) La méthode actualiser() reçoit directement le statut en paramètre. Quelle serait une alternative ? Quel serait l'avantage de chaque approche ?
+
+a) "Puisque FilActualite contient toute la logique de tri, elle a une seule responsabilité : gérer le fil d'actualité." (SRP)
+
+b) "Si on ajoute TriAmisProches en créant une nouvelle classe qui implémente AlgorithmeTri, on respecte OCP."
+
+c) "Le fait que Publication dépende de list[Abonne] plutôt que de list[NotifCourriel] est un exemple de DIP."
+
+d) "Une interface avec 10 méthodes abstraites est préférable à plusieurs petites interfaces, car ça réduit le nombre de fichiers." (ISP)
